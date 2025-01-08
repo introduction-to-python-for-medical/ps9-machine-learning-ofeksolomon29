@@ -8,7 +8,6 @@ parkinson_data = parkinson_data.dropna()
  y = parkinson_data[target]
 
 from sklearn.preprocessing import MinMaxScaler
-
 scaler = MinMaxScaler()
 x_scaled = scaler.fit_transform(x)
 
@@ -20,7 +19,6 @@ model = SVC()
 model.fit(x_train, y_train)
 
 from sklearn.metrics import accuracy_score
-
 y_pred = model.predict(x_test)
 accuracy = accuracy_score(y_test, y_pred)
 print(accuracy)
