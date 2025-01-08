@@ -1,2 +1,2 @@
-path: "parkinson_data.joblib
+path: "parkinson_data.joblib"
 features: ['PPE', 'DFA']
